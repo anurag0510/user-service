@@ -1,0 +1,35 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "APIs to CRUD user objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anurag0510/user-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anurag0510/user-service/issues"
+  },
+  "homepage": "https://github.com/anurag0510/user-service#readme",
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "common-errors": "^1.0.5",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.3",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}
