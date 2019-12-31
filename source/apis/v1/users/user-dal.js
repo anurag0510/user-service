@@ -1,4 +1,3 @@
-const Sequelize = require('sequelize');
 const { Op, EmptyResultError, UniqueConstraintError } = require('sequelize');
 const uuid = require('uuid');
 const { SQLError } = require('common-errors').data;
@@ -6,7 +5,7 @@ const { HttpStatusError } = require('common-errors');
 
 const Crypto = require('crypto');
 
-const { User } = require('../../../models/sequelize');
+const User = require('../../../models/user-model');
 
 class UserDal {
     async getUsers(filter, filterValue, additionalFilterValue, all) {

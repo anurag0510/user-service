@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const UserModel = require('../models/user-model');
+const Sequelize = require('sequelize');
+
 const sequelize = new Sequelize('user_service', 'root', 'anurag0510', {
     host: '127.0.0.1',
     dialect: 'mysql',
@@ -9,8 +9,6 @@ const sequelize = new Sequelize('user_service', 'root', 'anurag0510', {
         acquire: 30000,
         idle: 10000
     }
-})
-const User = UserModel(sequelize, Sequelize)
-module.exports = {
-    User
-}
+});
+
+module.exports = sequelize;
